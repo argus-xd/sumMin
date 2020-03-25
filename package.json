@@ -1,0 +1,24 @@
+{
+    "name": "summin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/argus-xd/sumMin.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/argus-xd/sumMin/issues"
+    },
+    "homepage": "https://github.com/argus-xd/sumMin#readme",
+    "dependencies": {
+        "jest": "^25.1.0",
+        "nodemon": "^2.0.2"
+    }
+}
