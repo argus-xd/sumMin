@@ -1,4 +1,4 @@
-const minSum = require("./minSum");
+const minSum = require("../minSum");
 
 test("[4, 0, 3, 19, 492, -10, 1]", () => {
     expect(minSum([4, 0, 3, 19, 492, -10, 1])).toBe(-10);

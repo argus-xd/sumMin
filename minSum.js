@@ -3,31 +3,31 @@ const sum = arr => {
     return arr.reduce(reducer);
 };
 
-isNumber = get => {
+const isNumber = get => {
     return !isNaN(get);
 };
 
-module.exports = getArr = get => {
-    if (typeof get == "string") {
-        if (isNumber(get)) {
-            get = [parseFloat(get)];
+module.exports = getArrNumber = array => {
+    if (typeof array == "string") {
+        if (isNumber(array)) {
+            array = [parseFloat(array)];
         } else return "Not Number";
     }
 
-    if (!get || get.length <= 1) {
-        return get && get[0] ? get[0] : 0;
+    if (!array || array.length <= 1) {
+        return array && array[0] ? array[0] : 0;
     }
 
     let minFirst;
     let minSecond;
 
-    minFirst = get[0] > get[1] ? get[1] : get[0];
-    minSecond = get[0] > get[1] ? get[0] : get[1];
+    minFirst = array[0] > array[1] ? array[1] : array[0];
+    minSecond = array[0] > array[1] ? array[0] : array[1];
 
-    for (let i = 0; i < get.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         save = minFirst;
-        if (get[i] < minFirst) {
-            minFirst = get[i];
+        if (array[i] < minFirst) {
+            minFirst = array[i];
         }
         if (save < minSecond && save != minFirst) {
             minSecond = save;
